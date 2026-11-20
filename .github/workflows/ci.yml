@@ -1,0 +1,27 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  php:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ["8.1", "8.3"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          ini-values: opcache.enable_cli=1, opcache.jit=tracing, opcache.jit_buffer_size=128M
+      - run: php src/php/tests/run_tests.php
+  python:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -e "src/python[test]"
+      - run: pytest src/python

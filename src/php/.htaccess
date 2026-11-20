@@ -1,0 +1,7 @@
+Options -Indexes
+
+# Configuration and server-side code are not web resources
+<Files "config.php">
+    Require all denied
+</Files>
+RedirectMatch 404 ^/?(.*/)?(src|tests)(/.*)?$

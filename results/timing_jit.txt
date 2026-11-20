@@ -1,0 +1,11 @@
+== Table 5: run time per preset (runtime_total, median of 3), PHP 8.3.6 + JIT
+  Classical: nonautonomous soliton, exact + convergence            1.69 s  (range 1.68-1.76)
+  Classical: shape-changing collision                              1.04 s  (range 1.03-1.06)
+  Classical: dispersion management in a harmonic trap              1.19 s  (range 1.15-1.24)
+  Space-fractional: soliton α = 1.5, exact + convergence          1.57 s  (range 1.57-1.67)
+  Space-fractional: inelastic collision, α = 1.5                  1.90 s  (range 1.80-1.93)
+  Caputo: manufactured solution ν = 0.6, exact + convergence      3.36 s  (range 3.33-3.48)
+  Caputo: soliton decay under memory, ν = 0.8                     3.53 s  (range 3.24-3.58)
+  Caputo: two-soliton interaction, ν = 0.9                        2.00 s  (range 1.98-2.24)
+
+JSON written to results/timing_jit.json

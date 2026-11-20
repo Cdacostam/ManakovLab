@@ -1,0 +1,47 @@
+{
+    "version": "1.0.0",
+    "engine": "PHP 8.3.6",
+    "date": "2026-11-20T19:15:13+00:00",
+    "timing": {
+        "classic-exact": {
+            "median": 5.382,
+            "min": 5.097,
+            "max": 5.395
+        },
+        "classic-collision": {
+            "median": 3.389,
+            "min": 3.338,
+            "max": 3.438
+        },
+        "classic-trap": {
+            "median": 4.14,
+            "min": 4.109,
+            "max": 4.472
+        },
+        "space-exact": {
+            "median": 5.234,
+            "min": 5.054,
+            "max": 5.408
+        },
+        "space-collision": {
+            "median": 6.047,
+            "min": 6.01,
+            "max": 6.434
+        },
+        "caputo-mms": {
+            "median": 9.762,
+            "min": 9.63,
+            "max": 9.789
+        },
+        "caputo-decay": {
+            "median": 10.349,
+            "min": 10.195,
+            "max": 10.532
+        },
+        "caputo-collision": {
+            "median": 6.315,
+            "min": 6.169,
+            "max": 6.429
+        }
+    }
+}

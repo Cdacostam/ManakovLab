@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manakov-lab"
+version = "1.0.0"
+description = "Python implementation of Manakov Lab: classical, Riesz space-fractional and Caputo time-fractional Manakov systems with variable coefficients"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Alvaro H. Salas", email = "ahsalass@unal.edu.co" },
+  { name = "Carlos D. Acosta M.", email = "cdacostam@unal.edu.co" },
+  { name = "Elizabeth Solorzano Tovar", email = "esolorzano@unal.edu.co" },
+]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+figures = ["matplotlib>=3.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

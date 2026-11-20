@@ -1,0 +1,9 @@
+caputo-decay time refinement, Manakov Lab 1.0.0 (Python)
+nu=0.9  P(T)/P(0)  N=600: 0.173566  N=1200: 0.171482  N=2400: 0.170476  N=4800: 0.170001  | order 1.05, 1.08  | Richardson limit 0.169575  | rel. diff N=1200 vs limit 1.12%
+nu=0.9  peak       N=600: 0.049086  N=1200: 0.047855  N=2400: 0.047259  N=4800: 0.046977  | order 1.05, 1.08  | Richardson limit 0.046723  | rel. diff N=1200 vs limit 2.42%
+nu=0.8  P(T)/P(0)  N=600: 0.161601  N=1200: 0.161002  N=2400: 0.160741  N=4800: 0.160627  | order 1.20, 1.20  | Richardson limit 0.160540  | rel. diff N=1200 vs limit 0.29%
+nu=0.8  peak       N=600: 0.034829  N=1200: 0.034630  N=2400: 0.034543  N=4800: 0.034505  | order 1.19, 1.20  | Richardson limit 0.034476  | rel. diff N=1200 vs limit 0.45%
+nu=0.7  P(T)/P(0)  N=600: 0.250940  N=1200: 0.250906  N=2400: 0.250893  N=4800: 0.250887  | order 1.37, 1.35  | Richardson limit 0.250884  | rel. diff N=1200 vs limit 0.01%
+nu=0.7  peak       N=600: 0.050085  N=1200: 0.050146  N=2400: 0.050171  N=4800: 0.050182  | order 1.27, 1.28  | Richardson limit 0.050189  | rel. diff N=1200 vs limit 0.09%
+nu=0.6  P(T)/P(0)  N=600: 0.339256  N=1200: 0.339313  N=2400: 0.339336  N=4800: 0.339344  | order 1.36, 1.37  | Richardson limit 0.339350  | rel. diff N=1200 vs limit 0.01%
+nu=0.6  peak       N=600: 0.099539  N=1200: 0.099656  N=2400: 0.099701  N=4800: 0.099718  | order 1.36, 1.38  | Richardson limit 0.099729  | rel. diff N=1200 vs limit 0.07%

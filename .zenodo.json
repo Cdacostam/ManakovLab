@@ -1,0 +1,36 @@
+{
+  "title": "Manakov Lab",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "license": "MIT",
+  "description": "Interactive laboratory for the variable-coefficient Manakov system and its Riesz space-fractional and Caputo time-fractional variants, with a pure-PHP web application and a NumPy port of its numerical core.",
+  "creators": [
+    {
+      "name": "Salas, Alvaro H.",
+      "affiliation": "Department of Mathematics and Statistics, Universidad Nacional de Colombia, Sede Manizales, Manizales, Colombia"
+    },
+    {
+      "name": "Acosta M., Carlos D.",
+      "affiliation": "Department of Mathematics and Statistics, Universidad Nacional de Colombia, Sede Manizales, Manizales, Colombia"
+    },
+    {
+      "name": "Solorzano Tovar, Elizabeth",
+      "affiliation": "Department of Mathematics and Statistics, Universidad Nacional de Colombia, Sede Manizales, Manizales, Colombia"
+    }
+  ],
+  "keywords": [
+    "Manakov system",
+    "vector solitons",
+    "fractional Schrodinger equation",
+    "Caputo derivative",
+    "split-step Fourier",
+    "L1 scheme"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Cdacostam/ManakovLab",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

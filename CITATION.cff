@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use Manakov Lab, please cite this software version."
+title: "Manakov Lab"
+version: "1.0.0"
+date-released: "2026-12-01"
+license: MIT
+repository-code: "https://github.com/Cdacostam/ManakovLab"
+url: "https://fizmako.com/manakov/"
+doi: "10.5281/zenodo.24406892"
+abstract: >-
+  Interactive laboratory for the variable-coefficient Manakov system and its Riesz space-fractional
+  and Caputo time-fractional variants, with a pure-PHP web application and a NumPy port
+  of its numerical core.
+keywords: [Manakov system, vector solitons, fractional Schrodinger equation, Caputo derivative,
+           split-step Fourier, L1 scheme, PHP, Python]
+contact:
+  - family-names: "Salas"
+    given-names: "Alvaro H."
+    email: "ahsalass@unal.edu.co"
+authors:
+  - family-names: "Salas"
+    given-names: "Alvaro H."
+    email: "ahsalass@unal.edu.co"
+    affiliation: &unal "Department of Mathematics and Statistics, Universidad Nacional de Colombia, Sede Manizales, Manizales, Colombia"
+  - family-names: "Acosta M."
+    given-names: "Carlos D."
+    email: "cdacostam@unal.edu.co"
+    affiliation: *unal
+  - family-names: "Solorzano Tovar"
+    given-names: "Elizabeth"
+    email: "esolorzano@unal.edu.co"
+    affiliation: *unal

@@ -1,0 +1,12 @@
+[
+  {"id": "classic-exact", "over": {"params": {"T": 2}, "convergence": false}},
+  {"id": "classic-collision", "over": {"params": {"T": 10}}},
+  {"id": "classic-trap", "over": {"params": {"T": 10}}},
+  {"id": "space-exact", "over": {"params": {"T": 2}, "convergence": false}},
+  {"id": "space-collision", "over": {"params": {"T": 5}}},
+  {"id": "caputo-mms", "over": {"params": {"N": 128}, "convergence": false}},
+  {"id": "caputo-decay", "over": {"params": {"nu": 0.6, "N": 200, "T": 5}}},
+  {"id": "caputo-decay", "over": {"params": {"nu": 0.1, "N": 64, "T": 1, "Nx": 128}}},
+  {"id": "caputo-decay", "over": {"params": {"nu": 1.0, "N": 300, "T": 3}}},
+  {"id": "caputo-collision", "over": {"params": {"N": 200, "T": 5}}}
+]

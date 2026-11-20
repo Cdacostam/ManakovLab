@@ -1,0 +1,70 @@
+== Table 3: maximum error over x and output times, observed orders
+  Classical, exact (preset classic-exact)        h = 0.04, 0.02, 0.01, 0.005
+                                                 err = 5.1237e-2, 1.2906e-2, 3.2324e-3, 8.0849e-4
+                                                 order = --, 1.989, 1.997, 1.999
+  Space-fractional alpha = 1.5, exact (space-exact) h = 0.04, 0.02, 0.01, 0.005
+                                                 err = 3.2143e-2, 8.1066e-3, 2.0311e-3, 5.0806e-4
+                                                 order = --, 1.987, 1.997, 1.999
+  Caputo nu = 0.6, manufactured, graded r = 7/3  h = 64, 128, 256, 512
+                                                 err = 7.8587e-4, 3.0075e-4, 1.1448e-4, 4.3469e-5
+                                                 order = --, 1.386, 1.393, 1.397
+  Caputo nu = 0.6, manufactured, uniform r = 1   h = 64, 128, 256, 512
+                                                 err = 7.0527e-3, 4.6319e-3, 3.0483e-3, 2.0082e-3
+                                                 order = --, 0.607, 0.604, 0.602
+  nonlinear solve at N = 512 (mean / max iterations per step): graded 7.28 / 12, uniform 7.89 / 9
+  grading reduces the error at N = 512 by a factor 46.2
+
+== Table 3: Caputo nu = 1/2, linear mode e^{ix}, exact E_{1/2}(-i sqrt t); T = 0.25, L = 2 pi, Nx = 64, r = 3
+  Caputo nu = 0.5, linear, Mittag-Leffler (max error over outputs) h = 32, 64, 128, 256
+                                                 err = 1.7498e-3, 6.3039e-4, 2.2580e-4, 8.0578e-5
+                                                 order = --, 1.473, 1.481, 1.487
+
+== Table 3: general coefficients, V != 0, self-convergence against dt = 7.8125e-4
+  Classical, general coefficients, V != 0, T = 5 h = 0.05, 0.025, 0.0125, 0.00625
+                                                 err = 5.9423e-2, 1.4877e-2, 3.7263e-3, 9.2293e-4
+                                                 order = --, 1.998, 1.997, 2.013
+
+== Fractional soliton alpha = 1.5, eta = 0.5 (mu = 1): tails, domain size, resolution
+  reference L = 320, Nx = 8192: amplitude 1.0883080591, Petviashvili residual 6.1e-13, tail exponent -2.514 (theory -(1+alpha) = -2.5)
+  L =    40, Nx =  256 (dx = 0.156): |amplitude - reference| = 2.80e-4
+  L =    80, Nx =  512 (dx = 0.156): |amplitude - reference| = 4.75e-5
+  L =   160, Nx = 1024 (dx = 0.156): |amplitude - reference| = 7.09e-6
+  L = 80: Nx 512 -> 1024 changes the amplitude by 1.5e-9
+  truncation exponents: 2.56 (40 -> 80), 2.74 (80 -> 160)
+
+== Exact fractional soliton near the lower end of the validated range
+  alpha = 1.2, L = 80, Nx = 512                  h = 0.04, 0.02, 0.01, 0.005
+                                                 err = 1.0166e-1, 2.5971e-2, 6.5281e-3, 1.6342e-3
+                                                 order = --, 1.969, 1.992, 1.998
+  alpha = 1.2, L = 160, Nx = 1024                h = 0.04, 0.02, 0.01, 0.005
+                                                 err = 1.0162e-1, 2.5962e-2, 6.5258e-3, 1.6337e-3
+                                                 order = --, 1.969, 1.992, 1.998
+
+== Table 4: Caputo memory (preset caputo-decay: eta 0.6, xi 0.1, x0 5, L = 160, Nx = 512, T = 15)
+  nu = 1 (split-step, dt = 0.01): P(T)/P(0) = 1.0000, peak = 0.5099 (initial 1.4400)
+  (same with L = 80, Nx = 256: peak = 0.4979; radiation re-enters the periodic domain)
+  nu = 0.9: N=600 0.1736 / 0.0491 [Picard 6.9/9] | N=1200 0.1715 / 0.0479 [Picard 6.0/8] | L=80,Nx=256: 0.1736 / 0.0491
+  nu = 0.8: N=600 0.1616 / 0.0348 [Picard 7.2/9] | N=1200 0.1610 / 0.0346 [Picard 6.3/8] | L=80,Nx=256: 0.1616 / 0.0348
+  nu = 0.7: N=600 0.2509 / 0.0501 [Picard 7.6/9] | N=1200 0.2509 / 0.0501 [Picard 6.8/8] | L=80,Nx=256: 0.2509 / 0.0501
+  nu = 0.6: N=600 0.3393 / 0.0995 [Picard 8.7/10] | N=1200 0.3393 / 0.0997 [Picard 7.6/9] | L=80,Nx=256: 0.3393 / 0.0995
+
+== Table 4, spatial refinement at fixed L = 160 (caputo-decay, N = 600): P(T)/P(0) and peak for Nx = 256, 512, 1024
+  nu = 0.9: Nx=256 0.173627 / 0.049119 | Nx=512 0.173566 / 0.049086 | Nx=1024 0.173566 / 0.049108
+  nu = 0.8: Nx=256 0.161565 / 0.034830 | Nx=512 0.161601 / 0.034829 | Nx=1024 0.161601 / 0.034829
+  nu = 0.7: Nx=256 0.250890 / 0.050040 | Nx=512 0.250940 / 0.050085 | Nx=1024 0.250940 / 0.050097
+  nu = 0.6: Nx=256 0.339208 / 0.099541 | Nx=512 0.339256 / 0.099539 | Nx=1024 0.339256 / 0.099539
+
+== L1 scheme close to nu = 1: P(T)/P(0) under refinement of N (caputo-decay)
+  nu = 0.95: N=600 0.3167 | N=1200 0.3194 | N=2400 0.3209
+  nu = 0.99: N=600 0.6321 | N=1200 0.6823 | N=2400 0.7141
+
+== Nonlinear solve of the L1 scheme: Anderson (depth 10) versus plain Picard
+  caputo-decay, nu = 0.1, T = 1, Nx = 128: N=64 P(T)/P(0) 0.626439 [12.3/15] | N=256 P(T)/P(0) 0.626779 [11.7/14] | N=1024 P(T)/P(0) 0.626809 [11.1/14] | plain Picard (N=64): fails at step 25
+  caputo-decay, nu = 0.05, T = 1, Nx = 128: N=64 P(T)/P(0) 0.620211 [13.6/16] | N=256 P(T)/P(0) 0.620376 [13.0/15] | N=1024 P(T)/P(0) 0.620389 [12.4/14] | plain Picard (N=64): fails at step 6
+  caputo-mms, amplitude 1 (eta = 0.5), nu = 0.6: N=256 err 0.00779805 [11.8/23] | plain Picard (N=256): fails at step 242
+
+== Shape-changing collision (preset classic-collision), powers per soliton divided by exp(2 int g)
+  soliton 1: (1.000, 1.000) -> (1.697, 0.303), total 2.000
+  soliton 2: (2.400, 0.000) -> (1.703, 0.697), total 2.400
+
+JSON written to results/reproduce.json
